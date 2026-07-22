@@ -1,0 +1,98 @@
+#root {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.App {
+  text-align: left;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+.count {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #646cff;
+}
+
+.btn-clear-all {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+.btn-clear-all:hover {
+  border-color: #e74c3c;
+}
+
+.notification-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+
+.notification-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.notification-name {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.notification-message {
+  margin: 0;
+  color: #b0b0b0;
+  line-height: 1.5;
+}
+
+.btn-clear {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+  padding: 2rem 0;
+}
+
+@media (prefers-color-scheme: light) {
+  .header {
+    border-bottom-color: #ddd;
+  }
+
+  .notification-item {
+    border-color: #ddd;
+    background-color: #f9f9f9;
+  }
+
+  .notification-message {
+    color: #555;
+  }
+}
